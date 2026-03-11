@@ -1,0 +1,67 @@
+
+' =========================================================
+' PlantUML global configuration
+' Includes fonts, participant styling, and general defaults
+' Save as plantuml.cfg and include in diagrams with !include
+' =========================================================
+
+!theme spacelab
+
+' ----------------------------
+' Global fonts
+' ----------------------------
+skinparam DefaultFontName "Segoe UI"
+skinparam DefaultFontSize 12
+skinparam DefaultFontStyle normal
+' skinparam DefaultFontColor black
+' skinparam DefaultFontColor white
+
+skinparam DefaultMonospacedFontName "Cascadia Mono"
+
+skinparam TitleBorderColor #101010
+' skinparam TitleBorderColor #FFFFFF
+
+' ----------------------------
+' Participant styling
+' ----------------------------
+' skinparam ParticipantFontName "Segoe UI"
+' skinparam ParticipantFontSize 14
+' skinparam ParticipantFontStyle normal
+' skinparam ParticipantBackgroundColor #16586eff
+' skinparam ParticipantBorderColor #16586eff
+' skinparam ParticipantPadding 5
+' skinparam ParticipantFontColor white
+
+' ----------------------------
+' Notes styling (monospaced by default)
+' ----------------------------
+' skinparam NoteFontName "Cascadia Mono"
+' skinparam NoteFontSize 13
+' skinparam NoteFontStyle normal
+skinparam NoteFontColor #333333
+skinparam NoteBackgroundColor #f5f5f5
+' skinparam NoteBorderColor #888888
+' skinparam NoteBorderThickness 1
+' skinparam NoteShadowing false
+
+' ----------------------------
+' Sequence diagram arrow styling
+' ----------------------------
+' skinparam SequenceArrowThickness 1
+skinparam SequenceMessageAlignment center
+' skinparam SequenceBoxBorderColor #1a4d7a
+' skinparam SequenceBoxFontColor #1a1a1a
+' skinparam SequenceBoxFontName "Segoe UI"
+' skinparam SequenceBoxFontSize 14
+
+' ----------------------------
+' Optional: general diagram styling
+' ----------------------------
+skinparam BackgroundColor #101010
+' skinparam BackgroundColor #FFFFFF
+' skinparam Shadowing false
+
+' -------------------------------
+' Macros
+' -------------------------------
+' !define ArrowRequest(from,to,label) from -[#white]> to : label

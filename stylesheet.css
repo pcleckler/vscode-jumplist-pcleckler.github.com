@@ -1,0 +1,19 @@
+.prompt-dialog {
+    background-color: rgba(30, 30, 30, 0.95);
+    border-radius: 8px;
+    padding: 12px;
+}
+.prompt-dialog St.Label, .prompt-dialog St.Entry {
+    color: white; /* Make text readable */
+}
+
+.system-status-icon-dimmed {
+    color: rgba(255, 255, 255, 0.25); /* Dimmed color */
+}
+
+.jumplist-title {
+    font-size: 125%;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}

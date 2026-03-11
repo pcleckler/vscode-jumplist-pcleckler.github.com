@@ -1,0 +1,25 @@
+{
+  "Repeat": true,
+  "RepeatSeconds": 4,
+
+  "ModelsPath": "./DataStructures.json",
+
+  "Generators": {
+
+    "Js_IConvertible_Module": {
+        "Enabled": true,
+        "OutputDirectory": "../classes/models/generated"
+    },
+
+    "Js_POJO": {
+        "Enabled": true,
+        "OutputDirectory": "../classes/models/generated",
+        "IncludeClasses": ["Indexes"]
+    },
+    
+    "PlantUMLClassDiagram": {
+        "Enabled": true,
+        "OutputFile": "./ClassGen.puml"
+    }
+  }
+}

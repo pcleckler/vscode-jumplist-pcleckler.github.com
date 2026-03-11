@@ -1,0 +1,8 @@
+{
+  "name": "VSCode JumpList",
+  "description": "Populates a JumpList of recent files and folder loaded in Visual Studio Code.",
+  "uuid": "vscode-jumplist@pcleckler.github.com",
+  "shell-version": [
+    "46"
+  ]
+}

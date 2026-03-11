@@ -140,7 +140,7 @@ export default class VsCodeJumpLists extends Extension {
                 }
 
             } else {
-                this.messageBox(`Error running sqlite3: ${new TextDecoder().decode(stderr)}. Make sure 'sqlite3x' is installed and in your PATH.`);
+                this.messageBox(`Error running sqlite3: ${new TextDecoder().decode(stderr)}. Make sure 'sqlite3' is installed and in your PATH.`);
             }
 
             if (this.pinsDir === null) {

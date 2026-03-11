@@ -127,7 +127,7 @@ export default class VsCodeJumpLists extends Extension {
 
             if (ok) {
 
-                let result = imports.byteArray.toString(stdout).trim();
+                let result = new TextDecoder().decode(stdout).trim();
 
                 try {
                     if (result.length > 0) {
@@ -140,7 +140,7 @@ export default class VsCodeJumpLists extends Extension {
                 }
 
             } else {
-                this.messageBox(`Error running sqlite3: ${imports.byteArray.toString(stderr)}. Make sure 'sqlite3x' is installed and in your PATH.`);
+                this.messageBox(`Error running sqlite3: ${new TextDecoder().decode(stderr)}. Make sure 'sqlite3x' is installed and in your PATH.`);
             }
 
             if (this.pinsDir === null) {
@@ -180,7 +180,7 @@ export default class VsCodeJumpLists extends Extension {
 
                     if (ok2) {
 
-                        const json = imports.byteArray.toString(contents);
+                        const json = new TextDecoder().decode(contents);
 
                         const pinObj = JSON.parse(json);
 
@@ -425,12 +425,12 @@ export default class VsCodeJumpLists extends Extension {
 
             if (!ok) {
 
-                this.messageBox(`Error checking for sqlite3:\n\n${imports.byteArray.toString(stderr)}. Make sure 'sqlite3' is installed and in your PATH.`);
+                this.messageBox(`Error checking for sqlite3:\n\n${new TextDecoder().decode(stderr)}. Make sure 'sqlite3' is installed and in your PATH.`);
                 return false;
 
             } else {
 
-                let result = imports.byteArray.toString(stdout).trim();
+                let result = new TextDecoder().decode(stdout).trim();
 
                 if (result.length < 1) {
                     this.messageBox(`sqlite3 not found. Make sure 'sqlite3' is installed and in your PATH.`);

@@ -153,7 +153,7 @@ export default class VsCodeJumpLists extends Extension {
                 try {
                     this.pinsDir.make_directory_with_parents(null);
                 } catch (e) {
-                    this.logMessage("Error creating pins directory: ", e);
+                    this.messageBox(`Error creating pins directory:\n\n${e}`);
                     // Abort if we can't create it
                     return;
                 }
@@ -257,7 +257,7 @@ export default class VsCodeJumpLists extends Extension {
             this.loadHistory();
 
         } catch (e) {
-            this.logMessage("Error pinning:", e);
+            this.messageBox(`Error pinning:\n\n${e}`);
         }
     }
 
@@ -272,7 +272,7 @@ export default class VsCodeJumpLists extends Extension {
             this.loadHistory();
 
         } catch (e) {
-            this.logMessage("Error unpinning:", e);
+            this.messageBox(`Error unpinning:\n\n${e}`);
         }
     }
 
@@ -333,7 +333,7 @@ export default class VsCodeJumpLists extends Extension {
                     });
                 }
             } catch (error) {
-                this.logMessage("Error handling star button clicked:", error);
+                this.messageBox(`Error handling star button clicked:\n\n${error}`);
             }
         });
 

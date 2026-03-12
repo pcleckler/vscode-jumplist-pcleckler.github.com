@@ -1,8 +1,13 @@
 {
   "name": "VSCode JumpList",
-  "description": "Populates a JumpList of recent files and folder loaded in Visual Studio Code.",
+  "description": "Populates a JumpList of recent files and folders that have been loaded in Visual Studio Code or pinned via the extension.",
   "uuid": "vscode-jumplist@pcleckler.github.com",
   "shell-version": [
-    "46"
-  ]
+    "46",
+    "47",
+    "48",
+    "49"
+  ],
+  "url": "https://github.com/pcleckler/vscode-jumplist-pcleckler.github.com",
+  "version": 1
 }

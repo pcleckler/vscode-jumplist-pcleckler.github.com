@@ -32,6 +32,21 @@
                 "runOn": "folderOpen"
             },
             "problemMatcher": []
+        },
+        {
+            "label": "Refresh Extension",
+            "type": "shell",
+            "command": "./scripts/RefreshExtension.ps1",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": false,
+                "clear": true
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "problemMatcher": []
         }
     ]
 }
